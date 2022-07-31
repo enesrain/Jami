@@ -1,0 +1,348 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    box-sizing: border-box;
+  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+body {
+    display: grid;
+    grid-template-rows: 80px 500px 350px 600px 600px 600px 600px;
+    background-color: rgb(180, 175, 175);
+}
+body > div {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: gray;
+    
+}
+
+header {
+     display: grid;
+     grid-template-columns: 150px auto 70px 70px;
+     text-align: center;
+     background-color: white;
+}
+header h1 {
+    padding-top: 24px;
+    font-weight: 600;
+    font-size: 25px;
+    color: gray;
+}
+header a {
+    color: gray;
+    padding-top: 28px;
+}
+header a:hover {
+    color: black;
+}
+/*---------------------------------------------------*/
+
+
+.div1 {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    text-align: center;
+}
+.div1-top {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+}
+.div1-top h1 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 100px;
+}
+.div1-top p {
+    line-height: 30px;
+    margin-top: 25px;
+    width: 500px;
+    margin-left: 340px;
+}
+.div1-bottom {
+ display: flexbox;
+ flex-direction: row;
+ justify-content: space-evenly;
+    
+}
+.div1-bottom i {
+    font-size: 20px;
+    color: midnightblue;
+    margin: 10px;
+}
+/*------------------------------------------------------------------------*/
+
+.div2 {
+    display: grid;
+    grid-template-rows: 15% 85%;
+    text-align: center;
+}
+.div2-top {
+ padding-top: 10px;
+ font-size: 25px;
+}
+.div2-top > i:hover {
+    color: red;
+}
+.div2-bottom h1 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.div2-bottom p {
+    
+    line-height: 25px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+/*------------------------------------------------------------*/
+
+.div3 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+   
+}
+.div3-right {
+    background-image: url(r1.png);
+    background-size: cover;
+}
+.div3-left {
+    padding-top: 150px;
+}
+.div3-top {
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 150px;
+    grid-row-gap: 20px;
+}
+.div3-top > h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.div3-top > i {
+    width: 160px;
+}
+.div3-bottom {
+    display: grid;
+    grid-template-columns: 70px 70px 100px;
+    text-align: left;
+    margin: 80px;
+    padding-left: 15px;
+}
+.div3-bottom > label {
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    margin-right: 5px;
+}
+/*-----------------------------------------------------------*/
+.div4 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+}
+.div4-left {
+    padding-top: 150px;
+}
+.div4-right {
+    background-image: url(r2.png);
+    background-size: cover;
+    order: -1;
+}
+.div4-top {
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-row-gap: 20px;
+}
+.div4-top > h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.div4-top > i {
+    width: 100px;
+}
+.div4-bottom {
+    display: grid;
+    grid-template-columns: 100px 70px 70px;
+    text-align: left;
+    margin: 80px;
+    padding-left: 15px;
+}
+.div4-bottom > label {
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    margin-right: 5px;
+}
+/*--------------------------------------------------*/
+
+.div5 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+}
+.div5-right {
+    background-image: url(r3.png);
+    background-size: cover;
+}
+.div5-left {
+    padding-top: 150px;
+}
+.div5-top {
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 120px;
+    grid-row-gap: 20px;
+}
+.div5-top > h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.div5-top > i {
+    width: 100px;
+}
+.div5-bottom {
+    display: grid;
+    grid-template-columns: 100px 100px 70px 70px;
+    text-align: left;
+    margin: 80px;
+    padding-left: 15px;
+}
+.div5-bottom > label {
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    margin-right: 5px;
+}
+/*--------------------------------------------------------*/
+
+.div6 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+    
+}
+.div6-left {
+    padding-top: 150px;
+}
+.div6-right {
+    background-image: url(r4.png);
+    background-size: cover;
+    order: -1;
+}
+.div6-top {
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 0px;
+    grid-row-gap: 20px;
+}
+.div6-top > h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.div6-top > i {
+    width: 100px;
+}
+.div6-bottom {
+    display: grid;
+    grid-template-columns: 100px 100px 70px 70px;
+    text-align: left;
+    margin: 80px;
+    padding-left: 15px;
+}
+.div6-bottom > label {
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+#b {
+    padding: 15px;
+    border: 2px solid gray;
+}
+#b:hover {
+  border-color: midnightblue;
+}
